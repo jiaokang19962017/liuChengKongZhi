@@ -73,15 +73,26 @@ namespace ConsoleApplication1
                     Console.WriteLine("error!");
                     break;
             }*/
+            //double money = 10000;
+            //double interes = 1.0175;
+            //int i = 1;
+            //while (i<=10) {
+            //    money = money * interes;
+            //    Console.WriteLine(money);
+            //    i++;
+            //}
+            //Console.WriteLine(money);
             double money = 10000;
-            double interes = 1.0175;
+            double rese = 1.0175;
             int i = 1;
-            while (i<=10) {
-                money = money * interes;
-                Console.WriteLine(money);
+            do
+            {
+                money = money * rese;
+                Console.WriteLine("{0}", money);
+
                 i++;
-            }
-            Console.WriteLine(money);
+            } while (i <= 10);
+            Console.WriteLine("{0}",money);
         }
     }
 }
