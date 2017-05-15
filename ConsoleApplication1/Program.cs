@@ -241,14 +241,21 @@ namespace ConsoleApplication1
 
 
             //return
-            for (int i = 0; i < 10; i++)//终止当前循环,执行下一次循环
-        {
-            if (i == 6)
-            {
-                return;
-            }
-            Console.WriteLine(i + "");
-        }
+            /*  for (int i = 0; i < 10; i++)//
+          {
+              if (i == 6)
+              {
+                  return;
+              }
+              Console.WriteLine(i + "");
+          }*/
+            #endregion
+
+            #region goto语句
+            int i = 0;
+            goto c;
+            i = 9;
+        c: Console.WriteLine(i);
             #endregion
         }
     }
