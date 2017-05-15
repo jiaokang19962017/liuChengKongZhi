@@ -223,21 +223,32 @@ namespace ConsoleApplication1
 
 
             //商店
-            for (int i=0;i<5;i++)//外层循环控制依次进入下一个专卖店
+            /* for (int i=0;i<5;i++)//外层循环控制依次进入下一个专卖店
+             {
+                 int count = 0;
+                 Console.WriteLine("欢迎进入第{0}家专卖店",i+1);
+                 for(int j = 0; j < 3; j++) {//内层循环一次买一次衣服
+                 Console.WriteLine("你要离开这家专卖店吗?y/n");
+                 string str = Console.ReadLine();
+                     if (str == "y") {//如果离开,就跳出,结账,进入下家店
+                         break;
+                     }
+                     Console.WriteLine("买了一件衣服");
+                     count++;
+                 }
+                 Console.WriteLine("商店结账,买了{0}件",count);
+             }*/
+
+
+            //return
+            for (int i = 0; i < 10; i++)//终止当前循环,执行下一次循环
+        {
+            if (i == 6)
             {
-                int count = 0;
-                Console.WriteLine("欢迎进入第{0}家专卖店",i+1);
-                for(int j = 0; j < 3; j++) {//内层循环一次买一次衣服
-                Console.WriteLine("你要离开这家专卖店吗?y/n");
-                string str = Console.ReadLine();
-                    if (str == "y") {//如果离开,就跳出,结账,进入下家店
-                        break;
-                    }
-                    Console.WriteLine("买了一件衣服");
-                    count++;
-                }
-                Console.WriteLine("商店结账,买了{0}件",count);
+                return;
             }
+            Console.WriteLine(i + "");
+        }
             #endregion
         }
     }
