@@ -249,13 +249,47 @@ namespace ConsoleApplication1
               }
               Console.WriteLine(i + "");
           }*/
+
+            //while循环打印1-10之间的奇数(continue)
+            /* int i = 1;
+             while (i <=10)
+             {
+                 if (i % 2 != 0)
+                 {
+                     Console.WriteLine(i);    
+                 }
+                 i++;
+             }*/
+            /* for (int i = 1; i <= 10; i++)
+             {
+                 if (i % 2 != 0)
+                 {
+                     Console.WriteLine( i);
+                     i++;
+                 }
+             }*/
+            //for循环打印100以内的素数
+            int j;
+            for (int i = 2; i <= 100; i++)
+            {
+                j = 2;
+                while (i % j != 0)
+                {
+                    j++;
+                }
+                if (j == i)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
             #endregion
 
             #region goto语句
-            int i = 0;
-            goto c;
-            i = 9;
-        c: Console.WriteLine(i);
+            /* int i = 0;
+             goto c;
+             i = 9;
+             c: Console.WriteLine(i);*/
             #endregion
         }
     }
