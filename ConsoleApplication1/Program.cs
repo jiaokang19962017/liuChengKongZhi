@@ -269,29 +269,46 @@ namespace ConsoleApplication1
                  }
              }*/
             //for循环打印100以内的素数
-            int j;
+            /*  int j;
+              for (int i = 2; i <= 100; i++)
+              {
+                  j = 2;
+                  while (i % j != 0)
+                  {
+                      j++;
+                  }
+                  if (j == i)
+                  {
+                      Console.WriteLine(i);
+                  }
+              }*/
+
+
             for (int i = 2; i <= 100; i++)
             {
-                j = 2;
-                while (i % j != 0)
+                bool flag = true;
+                for (int j = 2;j<i;j++)
                 {
-                    j++;
+                    if (i % j == 0)
+                    {
+                        flag = false;
+                        break;
+                    }
                 }
-                if (j == i)
+                if (flag)
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(i+"");
                 }
             }
+                #endregion
 
-            #endregion
-
-            #region goto语句
-            /* int i = 0;
-             goto c;
-             i = 9;
-             c: Console.WriteLine(i);*/
-            #endregion
-        }
+                #region goto语句
+                /* int i = 0;
+                 goto c;
+                 i = 9;
+                 c: Console.WriteLine(i);*/
+                #endregion
+            }
     }
 
 }
