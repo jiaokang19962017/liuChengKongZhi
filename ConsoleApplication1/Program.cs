@@ -118,20 +118,28 @@ namespace ConsoleApplication1
                   }
               }
               Console.WriteLine(sum);*/
-   
-            for (int i = 0; i < 3; i++) {
-                Console.WriteLine("请输入第{0}班级",i+1);
-                //内层循环:学生成绩
-                int sum = 0;//存放每个班的学生成绩
-                int avg = 0;//存放每个班的平均成绩
-                for (int j = 0; j < 4; j++) {
-                    Console.WriteLine("第{0}名学生的成绩",j+1);
-                    int score = int.Parse(Console.ReadLine());//输入成绩
-                    sum += score;//累加成绩
+
+            /* for (int i = 0; i < 3; i++) {
+                 Console.WriteLine("请输入第{0}班级",i+1);
+                 //内层循环:学生成绩
+                 int sum = 0;//存放每个班的学生成绩
+                 int avg = 0;//存放每个班的平均成绩
+                 for (int j = 0; j < 4; j++) {
+                     Console.WriteLine("第{0}名学生的成绩",j+1);
+                     int score = int.Parse(Console.ReadLine());//输入成绩
+                     sum += score;//累加成绩
+                 }
+                 avg = sum / 4;//平均成绩
+                 Console.WriteLine("第{0}个班级的平均成绩:{1}",i+1,avg);*/
+
+            //打印*直角三角形图案
+            for (int i = 0; i <=5 ; i++) {
+                for (int j = 0; j < i; j++) {
+                    Console.Write("*");
                 }
-                avg = sum / 4;//平均成绩
-                Console.WriteLine("第{0}个班级的平均成绩:{1}",i+1,avg);
+                Console.WriteLine();
+            }
             }
         }
-    }
+    
 }
