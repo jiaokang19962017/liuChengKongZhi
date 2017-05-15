@@ -188,14 +188,32 @@ namespace ConsoleApplication1
             Console.WriteLine(sum);*/
 
             //99乘法表
-            for (int i = 0; i <= 9; i++)
+            /* for (int i = 0; i <= 9; i++)
+             {
+                 for (int j = 0; j <= i; j++)
+                 {
+                     Console.Write("{0}x{1}={2}\t", i, j, i * j);
+                 }
+                 Console.WriteLine();
+             }*/
+
+            /* for (int i=0;i<10;i++)//终止整个循环
+             {
+                 if (i == 5) {
+                     break;
+                 }
+                 Console.WriteLine(i+"");
+             }*/
+
+            /*for (int i = 0; i < 10; i++)//终止当前循环,执行下一次循环
             {
-                for (int j = 0; j <= i; j++)
+                if (i == 5)
                 {
-                    Console.Write("{0}x{1}={2}\t", i, j, i * j);
+                    continue;
                 }
-                Console.WriteLine();
-            }
+                Console.WriteLine(i + "");
+            }*/
+            
             #endregion
         }
     }
