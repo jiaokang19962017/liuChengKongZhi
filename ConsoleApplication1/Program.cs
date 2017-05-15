@@ -125,21 +125,28 @@ namespace ConsoleApplication1
             #endregion
 
             #region 学生平均成绩
-            /*   for (int i = 0; i < 3; i++)
-               {
-                   Console.WriteLine("请输入第{0}班级", i + 1);
-                   //内层循环:学生成绩
-                   int sum = 0;//存放每个班的学生成绩
-                   int avg = 0;//存放每个班的平均成绩
-                   for (int j = 0; j < 4; j++)
-                   {
-                       Console.WriteLine("第{0}名学生的成绩", j + 1);
-                       int score = int.Parse(Console.ReadLine());//输入成绩
-                       sum += score;//累加成绩
-                   }
-                   avg = sum / 4;//平均成绩
-                   Console.WriteLine("第{0}个班级的平均成绩:{1}", i + 1, avg);
-               }*/
+            /* int count = 0;
+              for (int i = 0; i < 3; i++)
+                {
+                    Console.WriteLine("请输入第{0}班级", i + 1);
+                    //内层循环:学生成绩
+                    int sum = 0;//存放每个班的学生成绩
+                    int avg = 0;//存放每个班的平均成绩
+                    for (int j = 0; j < 4; j++)
+                    {
+                        Console.WriteLine("第{0}名学生的成绩", j + 1);
+                        int score = int.Parse(Console.ReadLine());//输入成绩
+                        sum += score;//累加成绩
+                     if (score < 85) {
+                         continue;
+                     }
+                     count++;
+                    }
+                 /* avg = sum / 4;//平均成绩
+                  Console.WriteLine("第{0}个班级的平均成绩:{1}", i + 1, avg);
+                 Console.WriteLine("高于85分的人数为{0}人",count);
+                }*/
+
             #endregion
 
             #region  打印*直角三角形图案
@@ -213,7 +220,24 @@ namespace ConsoleApplication1
                 }
                 Console.WriteLine(i + "");
             }*/
-            
+
+
+            //商店
+            for (int i=0;i<5;i++)
+            {
+                int count = 0;
+                Console.WriteLine("欢迎进入第{0}家专卖店",i+1);
+                for(int j = 0; j < 3; j++) {
+                Console.WriteLine("你要离开这家专卖店吗?y/n");
+                string str = Console.ReadLine();
+                    if (str == "y") {
+                        break;
+                    }
+                    Console.WriteLine("买了一件衣服");
+                    count++;
+                }
+                Console.WriteLine("商店结账,买了{0}件",count);
+            }
             #endregion
         }
     }
