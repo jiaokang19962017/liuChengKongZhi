@@ -30,21 +30,48 @@ namespace ConsoleApplication1
              {
                  Console.WriteLine("不及格");
              }*/
-            int score_a = 90;
-            int score_b = 90;
-            if (score_a >= score_b)
-            {
-                if (score_a == score_b)
-                {
-                    Console.WriteLine("成绩相同{0}", score_a);
-                }
-                else
-                {
-                    Console.WriteLine("较高的成绩{0}", score_b);
-                }
-            }
-            else {
-                Console.WriteLine("较高的成绩为{0}",score_b);
+            /* int score_a = 90;
+             int score_b = 90;
+             if (score_a >= score_b)
+             {
+                 if (score_a == score_b)
+                 {
+                     Console.WriteLine("成绩相同{0}", score_a);
+                 }
+                 else
+                 {
+                     Console.WriteLine("较高的成绩{0}", score_b);
+                 }
+             }
+             else {
+                 Console.WriteLine("较高的成绩为{0}",score_b);
+             }*/
+
+            int score = Convert.ToInt32(Console.ReadLine());
+            int i = score / 10;
+            switch (i) {
+                case 10:
+                case 9:
+                    Console.WriteLine("A");
+                    break;
+                case 8:
+                case 7:
+                    Console.WriteLine("B");
+                    break;
+                case 6:
+                    Console.WriteLine("C");
+                    break;
+                case 5:
+                case 4:
+                case 3:
+                case 2:
+                case 1:
+                case 0:
+                    Console.WriteLine("D");
+                    break;
+                default:
+                    Console.WriteLine("error!");
+                    break;
             }
         }
     }
