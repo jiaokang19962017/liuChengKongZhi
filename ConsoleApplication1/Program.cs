@@ -15,11 +15,18 @@ namespace ConsoleApplication1
             //Console.WriteLine(i);
             //Console.WriteLine(j);
             int score = Convert.ToInt32(Console.ReadLine());
-            if (score>=60) {
-                Console.WriteLine("您通过了考试");
-            }else
+            if (score>=85) {
+                Console.WriteLine("优秀");
+            }else if(score>=75)
             {
-                Console.WriteLine("您没有通过考试");
+                Console.WriteLine("良好");
+               
+            }else if (score>=60 ) {
+                Console.WriteLine("及格");
+            }
+            else
+            {
+                Console.WriteLine("不及格");
             }
         }
     }
