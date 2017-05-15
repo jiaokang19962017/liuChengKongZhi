@@ -103,12 +103,15 @@ namespace ConsoleApplication1
                 money = money * rese;
             }
             Console.WriteLine(money);*/
+            #region 1-10的和
             //int s = 0;
             //for (int i = 1;i<=10;i++)
             //{
             //    s = s + i;
             //}
             // Console.WriteLine(s);
+            #endregion
+
             #region 10以内偶数的和
             /*  int sum =0;
           for (int i = 0;i<=10;i++)
@@ -122,18 +125,21 @@ namespace ConsoleApplication1
             #endregion
 
             #region 学生平均成绩
-            /* for (int i = 0; i < 3; i++) {
-                 Console.WriteLine("请输入第{0}班级",i+1);
-                 //内层循环:学生成绩
-                 int sum = 0;//存放每个班的学生成绩
-                 int avg = 0;//存放每个班的平均成绩
-                 for (int j = 0; j < 4; j++) {
-                     Console.WriteLine("第{0}名学生的成绩",j+1);
-                     int score = int.Parse(Console.ReadLine());//输入成绩
-                     sum += score;//累加成绩
-                 }
-                 avg = sum / 4;//平均成绩
-                 Console.WriteLine("第{0}个班级的平均成绩:{1}",i+1,avg);*/
+            /*   for (int i = 0; i < 3; i++)
+               {
+                   Console.WriteLine("请输入第{0}班级", i + 1);
+                   //内层循环:学生成绩
+                   int sum = 0;//存放每个班的学生成绩
+                   int avg = 0;//存放每个班的平均成绩
+                   for (int j = 0; j < 4; j++)
+                   {
+                       Console.WriteLine("第{0}名学生的成绩", j + 1);
+                       int score = int.Parse(Console.ReadLine());//输入成绩
+                       sum += score;//累加成绩
+                   }
+                   avg = sum / 4;//平均成绩
+                   Console.WriteLine("第{0}个班级的平均成绩:{1}", i + 1, avg);
+               }*/
             #endregion
 
             #region  打印*直角三角形图案
@@ -150,13 +156,47 @@ namespace ConsoleApplication1
 
 
             #region foreach循环,输出一个字符串
-            string str = Console.ReadLine();
-            foreach (char item in str)
+            //string str = Console.ReadLine();
+            //foreach (char item in str)
+            //{
+            //    Console.Write(item + " ");
+            //}
+            #endregion
+            #region 练习
+            //for循环
+            /*int sum = 0;
+             for (int i = 0; i <= 100; i++) {
+                 sum = sum + i;
+             }
+             Console.WriteLine(sum);*/
+            //do-while循环
+            /* int sum = 0;
+             int i = 0;
+             do
+             {
+                 sum = sum + i;
+             } while (i++<100);
+             Console.WriteLine(sum);*/
+
+            //while循环
+            /*int sum = 0;
+            int i = 0;
+            while (i++ < 100)
             {
-                Console.Write(item + " ");
+                sum = sum + i;
+            }
+            Console.WriteLine(sum);*/
+
+            //99乘法表
+            for (int i = 0; i <= 9; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("{0}x{1}={2}\t", i, j, i * j);
+                }
+                Console.WriteLine();
             }
             #endregion
-
         }
     }
 
