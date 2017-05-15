@@ -47,7 +47,7 @@ namespace ConsoleApplication1
                  Console.WriteLine("较高的成绩为{0}",score_b);
              }*/
 
-            int score = Convert.ToInt32(Console.ReadLine());
+            /*int score = Convert.ToInt32(Console.ReadLine());
             int i = score / 10;
             switch (i) {
                 case 10:
@@ -72,7 +72,16 @@ namespace ConsoleApplication1
                 default:
                     Console.WriteLine("error!");
                     break;
+            }*/
+            double money = 10000;
+            double interes = 1.0175;
+            int i = 1;
+            while (i<=10) {
+                money = money * interes;
+                Console.WriteLine(money);
+                i++;
             }
+            Console.WriteLine(money);
         }
     }
 }
