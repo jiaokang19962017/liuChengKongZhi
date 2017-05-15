@@ -109,15 +109,28 @@ namespace ConsoleApplication1
             //    s = s + i;
             //}
             // Console.WriteLine(s);
-            int sum =0;
-            for (int i = 0;i<=10;i++)
-            {
-                if (i % 2 == 0)
-                {
-                    sum = sum + i;
+            /*  int sum =0;
+              for (int i = 0;i<=10;i++)
+              {
+                  if (i % 2 == 0)
+                  {
+                      sum = sum + i;
+                  }
+              }
+              Console.WriteLine(sum);*/
+   
+            for (int i = 0; i < 3; i++) {
+                Console.WriteLine("请输入第{0}班级",i+1);
+                int sum = 0;
+                int avg = 0;
+                for (int j = 0; j < 4; j++) {
+                    Console.WriteLine("第{0}名学生的成绩",j+1);
+                    int score = int.Parse(Console.ReadLine());
+                    sum += score;
                 }
+                avg = sum / 4;
+                Console.WriteLine("第{0}个班级的平均成绩:{1}",i+1,avg);
             }
-            Console.WriteLine(sum);
         }
     }
 }
