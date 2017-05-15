@@ -103,11 +103,21 @@ namespace ConsoleApplication1
                 money = money * rese;
             }
             Console.WriteLine(money);*/
-            int s = 0;
-            for (int i = 1;i<=10;i++) {
-                s = s + i;
+            //int s = 0;
+            //for (int i = 1;i<=10;i++)
+            //{
+            //    s = s + i;
+            //}
+            // Console.WriteLine(s);
+            int sum =0;
+            for (int i = 0;i<=10;i++)
+            {
+                if (i % 2 == 0)
+                {
+                    sum = sum + i;
+                }
             }
-             Console.WriteLine(s);
+            Console.WriteLine(sum);
         }
     }
 }
