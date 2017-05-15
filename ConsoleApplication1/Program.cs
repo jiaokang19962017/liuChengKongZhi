@@ -109,16 +109,19 @@ namespace ConsoleApplication1
             //    s = s + i;
             //}
             // Console.WriteLine(s);
+            #region 10以内偶数的和
             /*  int sum =0;
-              for (int i = 0;i<=10;i++)
+          for (int i = 0;i<=10;i++)
+          {
+              if (i % 2 == 0)
               {
-                  if (i % 2 == 0)
-                  {
-                      sum = sum + i;
-                  }
+                  sum = sum + i;
               }
-              Console.WriteLine(sum);*/
+          }
+          Console.WriteLine(sum);*/
+            #endregion
 
+            #region 学生平均成绩
             /* for (int i = 0; i < 3; i++) {
                  Console.WriteLine("请输入第{0}班级",i+1);
                  //内层循环:学生成绩
@@ -131,15 +134,30 @@ namespace ConsoleApplication1
                  }
                  avg = sum / 4;//平均成绩
                  Console.WriteLine("第{0}个班级的平均成绩:{1}",i+1,avg);*/
+            #endregion
 
-            //打印*直角三角形图案
-            for (int i = 0; i <=5 ; i++) {
-                for (int j = 0; j < i; j++) {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
+            #region  打印*直角三角形图案
+            /*  for (int i = 0; i <= 5; i++)
+             {
+                 for (int j = 0; j < i; j++)
+                 {
+                     Console.Write("*");
+                 }
+                 Console.WriteLine();
+             }*/
+            #endregion
+
+
+
+            #region foreach循环,输出一个字符串
+            string str = Console.ReadLine();
+            foreach (char item in str)
+            {
+                Console.Write(item + " ");
             }
-            }
+            #endregion
+
         }
-    
+    }
+
 }
