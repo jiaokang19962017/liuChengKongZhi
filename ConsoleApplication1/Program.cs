@@ -96,13 +96,18 @@ namespace ConsoleApplication1
             Console.WriteLine("{0}",money);
         }*/
 
-            double money = 10000;
+            /*double money = 10000;
             double rese = 1.0175;
             for (int i = 1; i <= 10; i++)
             {
                 money = money * rese;
             }
-            Console.WriteLine(money);
+            Console.WriteLine(money);*/
+            int s = 0;
+            for (int i = 1;i<=10;i++) {
+                s = s + i;
+            }
+             Console.WriteLine(s);
         }
     }
 }
